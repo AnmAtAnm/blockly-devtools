@@ -336,10 +336,12 @@ BlockEditorView.html = `
         <tr>
           <td height="5%">
             <h3>Block Definition:
-              <select id="format">
+                <!-- TODO(#270): Separate concerns of format and editable.
+                  -              Add "Editable" state toggle button? -->              <select id="format">
                 <option value="JSON">JSON</option>
                 <option value="JavaScript">JavaScript</option>
-                <option value="Manual">Manual edit&hellip;</option>
+                <option value="Manual-JSON">Manual JSON&hellip;</option>
+                <option value="Manual-JS">Manual JavaScript&hellip;</option>
               </select>
             </h3>
           </td>
